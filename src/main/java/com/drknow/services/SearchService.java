@@ -11,18 +11,11 @@ import java.util.List;
 
 @Service
 public class SearchService {
-
+	private static Answer noAnswer = new Answer("I don\'t know this.", null);
+	
 	public List<Answer> getAnswers(String question) {
 		List<Answer> answers = new ArrayList<Answer>();
-
-		Answer answer = new Answer("You are a good question!", new ArrayList<Keyword>(
-				Arrays.asList(new Keyword("good question", true), new Keyword("hurt me", false))));
-		Answer answer2 = new Answer("Your question hurt me.", new ArrayList<Keyword>(
-				Arrays.asList(new Keyword("good question", false), new Keyword("hurt me", true))));
-
-		answers.add(answer);
-		answers.add(answer2);
-
+		answers.add(noAnswer);
 		return answers;
 	}
 }
