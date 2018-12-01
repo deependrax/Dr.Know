@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Starving minds, welcome to Dr.Know!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<a class="navbar-brand logo" href="/">Dr. Know</a>
+
+	<div class="main">
+		<form class="form-horizontal" id="search-form">
+			<img class="drknow" src="images/drknow.jpg" />
+			<div class="form-group has-feedback has-search">
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>
+				<input id="question" type="text" class="form-control"
+					placeholder="What do you want to know?" />
+			</div>
+		</form>
+		<div id="results"></div>
+	</div>
+
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

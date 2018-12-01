@@ -1,0 +1,52 @@
+.navbar-brand {
+	font-family: Garamond, verdana;
+	font-size: 21px;
+	color: #555;
+}
+
+.main {
+	width: 50%;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.has-search .form-control-feedback {
+	right: initial;
+	left: 0;
+	color: #ccc;
+}
+
+.has-search .form-control {
+	padding-right: 12px;
+	padding-left: 34px;
+}
+
+.form-control {
+	height: 50px;
+}
+
+.form-control-feedback {
+	top: 7px;
+}
+
+.drknow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.keyword {
+	color: #808080;
+}
+
+.match {
+	color: green;
+	font-weight: 600;
+}
+
+hr {
+	margin-bottom: 0px;
+}
