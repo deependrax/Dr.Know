@@ -11,6 +11,7 @@
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin-top: 20px;
 }
 
 .has-search .form-control-feedback {
@@ -54,4 +55,9 @@ hr {
 .form-horizontal .form-group {
 	margin-right: 0px;
 	margin-left: 0px;
+}
+
+.results {
+    overflow: auto;
+    max-height: 350px;
 }

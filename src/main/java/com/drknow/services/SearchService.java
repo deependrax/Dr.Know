@@ -37,7 +37,7 @@ public class SearchService {
 	private static final Logger logger = LoggerFactory.getLogger(SearchService.class);
 	private static Gson GSON = new Gson();
 
-	private static Answer NO_ANSWER = new Answer("I don\'t know this.", null);
+	private static Answer NO_ANSWER = new Answer("I don't know this.", null);
 	private static Map<String, List<QNA>> answersIndex;
 	private static Set<String> stopWords;
 
@@ -83,7 +83,7 @@ public class SearchService {
 			return new ArrayList<>(Arrays.asList(NO_ANSWER));
 
 		// Sort answers found by score
-		List<Answer> answersList = new ArrayList(answers.values());
+		List<Answer> answersList = new ArrayList<Answer>(answers.values());
 		Collections.sort(answersList);
 
 		return answersList;
