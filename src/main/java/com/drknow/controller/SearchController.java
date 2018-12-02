@@ -25,15 +25,16 @@ public class SearchController {
 	@PostMapping("/api/ask-dr-know")
 	public ResponseEntity<?> search(@Valid @RequestBody SearchQuery searchQuery, Errors errors) {
 		SearchResponse result = new SearchResponse();
-		
+
 		// Handle invalid request errors and return error response
 		if (errors.hasErrors()) {
-			result.setMsg(errors.getAllErrors().stream().map(x -> x.getDefaultMessage()).collect(Collectors.joining(",")));
+			result.setMsg(
+					errors.getAllErrors().stream().map(x -> x.getDefaultMessage()).collect(Collectors.joining(",")));
 			return ResponseEntity.badRequest().body(result);
 		}
 
 		List<Answer> answers = searchService.getAnswers(searchQuery.getQuestion());
-		
+
 		if (answers.isEmpty()) {
 			result.setMsg("no answer found!");
 		} else {

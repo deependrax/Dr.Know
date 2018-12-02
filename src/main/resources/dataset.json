@@ -1,0 +1,1199 @@
+[/* 1 */
+{
+	"question" : "\"Where have you worked in the past?",
+	"answer" : "Microsoft India Development Center\nSoftware Development Engineer",
+	"tags" : [
+		"software development engineer",
+		"microsoft"
+	]
+},
+
+/* 2 */
+{
+	"question" : "Where are you from?",
+	"answer" : "Current City : Boston\nHometown : Hyderabad, India",
+	"tags" : [
+		"hyderabad",
+		"india",
+		"boston"
+	]
+},
+
+/* 3 */
+{
+	"question" : "Where are you from?",
+	"answer" : "I'm from Tokyo",
+	"tags" : [
+		"tokyo"
+	]
+},
+
+/* 4 */
+{
+	"question" : "are you and vince mcmahon close buddies",
+	"answer" : "I am a WWE (World Wrestling Entertainment) fan, and a friend of WWE chairman and CEO Vince McMahon. So yes, he's a good friend of mine.",
+	"tags" : [
+		"chairman and ceo",
+		"vince mcmahon",
+		"wwe"
+	]
+},
+
+/* 5 */
+{
+	"question" : "whats your name",
+	"answer" : "Hi there! I'm Francis, and I LOVE a good joke. Heck, I love a bad joke too. Grab a seat and let me entertain you!",
+	"tags" : [
+		"francis"
+	]
+},
+
+/* 6 */
+{
+	"question" : "What makes a good editor?",
+	"answer" : "That's a tough question, different projects have different needs, you need to be creative, but before you can do that you need to be organized, have a solid work flow and communicate well with your producer or director.",
+	"tags" : [
+		"producer",
+		"director"
+	]
+},
+
+/* 7 */
+{
+	"question" : "Where are you based out of ?",
+	"answer" : "I am based out of Bangalore.",
+	"tags" : [
+		"bangalore"
+	]
+},
+
+/* 8 */
+{
+	"question" : "So where are you from?",
+	"answer" : "I am from Ranchi, currently based out of Bangalore.",
+	"tags" : [
+		"ranchi",
+		"bangalore"
+	]
+},
+
+/* 9 */
+{
+	"question" : "Tell me more about america?",
+	"answer" : "I wanna travel to some parts of America. I want go anyhow to Canada and to many us states.",
+	"tags" : [
+		"america",
+		"canada",
+		"us"
+	]
+},
+
+/* 10 */
+{
+	"question" : "Where do you live?",
+	"answer" : "Boston, Massachusetts",
+	"tags" : [
+		"boston",
+		"massachusetts"
+	]
+},
+
+/* 11 */
+{
+	"question" : "Your views on russia?",
+	"answer" : "Russia is the largest country in the world. Its area is 17 098.242 thousand square km. The state is located in eastern Europe and northern Asia.\n\nFrom north to south the country stretches for over 4,000 km; from west to east â€“ for almost 10,000 km. Russia borders on 16 countries. In the south-east - with North Korea (DPRK), in the south with China, Mongolia, Kazakhstan, Azerbaijan and Georgia; in the south-west - with Ukraine, in the west with Belarus, Latvia, Estonia, Finland and Norway; the Kaliningrad Region borders on Lithuania and Poland.",
+	"tags" : [
+		"estonia",
+		"poland",
+		"kaliningrad",
+		"latvia",
+		"georgia",
+		"azerbaijan",
+		"lithuania",
+		"norway",
+		"finland",
+		"russia",
+		"belarus",
+		"ukraine",
+		"kazakhstan",
+		"mongolia",
+		"china",
+		"north korea",
+		"asia",
+		"europe"
+	]
+},
+
+/* 12 */
+{
+	"question" : "hobbies?",
+	"answer" : "Cricket, Stamps, Coins, Hollywood movies to name a few",
+	"tags" : [
+		"cricket"
+	]
+},
+
+/* 13 */
+{
+	"question" : "Where are you located?",
+	"answer" : "Mumbai, India and Singapore",
+	"tags" : [
+		"india",
+		"mumbai"
+	]
+},
+
+/* 14 */
+{
+	"question" : "Who are you?",
+	"answer" : "I'm a chat bot. I'm still in early beta. I was built by the folks over at EffectiveVegan.com.",
+	"tags" : [
+		"chat bot"
+	]
+},
+
+/* 15 */
+{
+	"question" : "Where are you from?",
+	"answer" : "Just like you, I'm human. Living in Beautiful Capital city of India: New Delhi.",
+	"tags" : [
+		"india",
+		"delhi"
+	]
+},
+
+/* 16 */
+{
+	"question" : "What's your location?",
+	"answer" : "Just like you, I'm human. Living in Beautiful Capital city of India: New Delhi.",
+	"tags" : [
+		"india",
+		"delhi"
+	]
+},
+
+/* 17 */
+{
+	"question" : "Where do you live?",
+	"answer" : "Just like you, I'm human. Living in Beautiful Capital city of India: New Delhi.",
+	"tags" : [
+		"india",
+		"delhi"
+	]
+},
+
+/* 18 */
+{
+	"question" : "What's your location?",
+	"answer" : "India",
+	"tags" : [
+		"india"
+	]
+},
+
+/* 19 */
+{
+	"question" : "Where do you live?",
+	"answer" : "India",
+	"tags" : [
+		"india"
+	]
+},
+
+/* 20 */
+{
+	"question" : "Where are you from?",
+	"answer" : "India",
+	"tags" : [
+		"india"
+	]
+},
+
+/* 21 */
+{
+	"question" : "Where are you from?",
+	"answer" : "MidnaporeE, West Bengal, India",
+	"tags" : [
+		"india",
+		"midnaporee",
+		"west bengal"
+	]
+},
+
+/* 22 */
+{
+	"question" : "Where do you live?",
+	"answer" : "MidnaporeE, West Bengal, India",
+	"tags" : [
+		"india",
+		"midnaporee",
+		"west bengal"
+	]
+},
+
+/* 23 */
+{
+	"question" : "Where are you from?",
+	"answer" : "Texas yo",
+	"tags" : [
+		"texas"
+	]
+},
+
+/* 24 */
+{
+	"question" : "Your views on india?",
+	"answer" : "My Motherland is India And I â�¤ India!",
+	"tags" : [
+		"india"
+	]
+},
+
+/* 25 */
+{
+	"question" : "are you justin bieber?",
+	"answer" : "My full name is Justin Drew Bieber.",
+	"tags" : [
+		"justin"
+	]
+},
+
+/* 26 */
+{
+	"question" : "Tell me about dee dee?",
+	"answer" : "Dee Dee",
+	"tags" : [
+		"dee dee"
+	]
+},
+
+/* 27 */
+{
+	"question" : "How do you build a chatbot?",
+	"answer" : "Step 1\nGo to the page bottr.me\n\nStep 2\nClick on the sign up/login option.\n\nStep 3\nSign up/login with your facebook or twitter account. \n\nStep 4\nBOOM!!\nYou are done.",
+	"tags" : [
+		"facebook",
+		"twitter"
+	]
+},
+
+/* 28 */
+{
+	"question" : "What do you know about pokemongo?",
+	"answer" : "PokÃ©mon Go is a free-to-play, location-based augmented reality game developed by Niantic for iOS and Android devices. The game was the result of a collaboration between Niantic and Nintendo, by way of The PokÃ©mon Company, and was initially released in selected countries in July 2016. In the game, players use a mobile device's GPS capability to locate, capture, battle, and train virtual creatures, called PokÃ©mon, who appear on the screen as if they were in the same real-world location as the player. The game supports in-app purchases for additional in-game items.",
+	"tags" : [
+		"mobile device",
+		"pok mon",
+		"augmented reality",
+		"nintendo",
+		"gps"
+	]
+},
+
+/* 29 */
+{
+	"question" : "What're your thoughts on web site?",
+	"answer" : "Bottr, however, can selectively access your feeds and showcase it to whoever asks, and only when they ask. This is complete control of your brand, and itâ€™s a way for to see exactly what people want about you no less and no more.",
+	"tags" : [
+		"bottr"
+	]
+},
+
+/* 30 */
+{
+	"question" : "Where are you from?",
+	"answer" : "Mumbai",
+	"tags" : [
+		"mumbai"
+	]
+},
+
+/* 31 */
+{
+	"question" : "What do you know about delhi?",
+	"answer" : "This time,last week: Roaming around the beautiful streets of Kolkata with the 3 of the most awesome people i know.\nThis time, this week: Trying frantically to finish 3 crazy assignments. \n\n#LifeNeedsPeace.",
+	"tags" : [
+		"kolkata",
+		"lifeneedspeace"
+	]
+},
+
+/* 32 */
+{
+	"question" : "What do you know about lifeneedspeace?",
+	"answer" : "This time,last week: Roaming around the beautiful streets of Kolkata with the 3 of the most awesome people i know.\nThis time, this week: Trying frantically to finish 3 crazy assignments. \n\n#LifeNeedsPeace.",
+	"tags" : [
+		"kolkata",
+		"lifeneedspeace"
+	]
+},
+
+/* 33 */
+{
+	"question" : "thoughts on iPhone 7",
+	"answer" : "Iphone 7 is an Apple product, so naturally, it's great.",
+	"tags" : [
+		"iphone"
+	]
+},
+
+/* 34 */
+{
+	"question" : "How would you describe yourself?",
+	"answer" : "Whoa, where do I begin? So, I'm a design graduate, trying to make it as a writer. I'm a closet poet. I like dead baby jokes. And all kinds of offensive jokes. I love trolling people (but in good humour). I love animals. I can eat for two. Beer is love. I don't like rude and entitled people. There you go.",
+	"tags" : [
+		"writer"
+	]
+},
+
+/* 35 */
+{
+	"question" : "Tell me more about you?",
+	"answer" : "Whoa, where do I begin? So, I'm a design graduate, trying to make it as a writer. I'm a closet poet. I like dead baby jokes. And all kinds of offensive jokes. I love trolling people (but in good humour). I love animals. I can eat for two. Beer is love. I don't like rude and entitled people. There you go.",
+	"tags" : [
+		"writer"
+	]
+},
+
+/* 36 */
+{
+	"question" : "What's your favorite product?",
+	"answer" : "My favorite product is Apple itself.",
+	"tags" : [
+		"apple"
+	]
+},
+
+/* 37 */
+{
+	"question" : "What's the best way to become successful?",
+	"answer" : "I didnâ€™t become successful overnight.\n\nIt took years of hard work, determination, and perseverance to build Apple into the company that it is today. When you take a step back from your MacBook (and put down your iPhone), and really think about all that I accomplished, itâ€™s beyond remarkable. I changed the way we live.",
+	"tags" : [
+		"apple inc",
+		"apple",
+		"macbook",
+		"iphone"
+	]
+},
+
+/* 38 */
+{
+	"question" : "Tell me about bill hewlett?",
+	"answer" : "I started showing interest in electronics at the age of ten, and would hang out with engineers in the neighbourhood. When I was 13, I called Bill Hewlett, of Hewlett Packard, to ask him for some parts, and he ended up giving me a summer job. It was heaven!",
+	"tags" : [
+		"bill hewlett",
+		"hewlett packard"
+	]
+},
+
+/* 39 */
+{
+	"question" : "how was reed college?",
+	"answer" : "As everyone knows, I went to Reed, but didn't graduate. Nonetheless, Reed made a profound impression on me.\n\nQuestioning everything and everyone, I dropped out and then dropped back in, taking courses in calligraphy, dance, and Shakespeare that would prove invaluable in designing the revolutionary Apple Macintosh.",
+	"tags" : [
+		"shakespeare",
+		"reed",
+		"apple"
+	]
+},
+
+/* 40 */
+{
+	"question" : "what s your opinion on the iphone 7?",
+	"answer" : "Iphone 7 is an Apple product, so naturally, it's great.",
+	"tags" : [
+		"iphone"
+	]
+},
+
+/* 41 */
+{
+	"question" : "Qual o seu nome completo?",
+	"answer" : "Julio Bomfim",
+	"tags" : [
+		"julio bomfim"
+	]
+},
+
+/* 42 */
+{
+	"question" : "what you think about android?",
+	"answer" : "I know I said, â€œIâ€™m going to destroy Android, because itâ€™s a stolen product. Iâ€™m willing to go thermonuclear war on this.â€�\n\nBut you must know what made me so mad. \nUp until the release of the iPhone, Google and Apple had a relatively close working relationship. Eric Schmidt was on Apple's board and Google Maps was included on the iPhone.\n\nAfter the iPhone came out and was successful, Google changed their whole strategy with Android and created something that was essentially a crappier version of the iPhone. Given that they perhaps had access to early information about the iPhone and perhaps even knew strategy details of where the project was going to go in the future, this seems like a betrayal of trust.\n\nFurthermore, there's very, very little about Android that's innovative as compared to the iPhone. It's one thing to take your competitor's idea and run with it in a new direction, faster and better than they could. It's entirely another to simply clone it. That's what I was mad about.",
+	"tags" : [
+		"iphone",
+		"google",
+		"apple",
+		"eric schmidt",
+		"google maps"
+	]
+},
+
+/* 43 */
+{
+	"question" : "how did you make iphone",
+	"answer" : "iPhone is a smartphone made by Apple that combines an iPod, a tablet PC, a digital camera and a cellular phone. The device includes Internet browsing and networking capabilities.",
+	"tags" : [
+		"iphone",
+		"apple",
+		"tablet pc",
+		"digital camera"
+	]
+},
+
+/* 44 */
+{
+	"question" : "How would you describe yourself?",
+	"answer" : "Laurie Bartlett, Creative Designer and Marketer",
+	"tags" : [
+		"creative designer",
+		"laurie bartlett"
+	]
+},
+
+/* 45 */
+{
+	"question" : "Your work history?",
+	"answer" : "Marketing Assistant at Active Built Constructions\nMarketing Assistant at CSM Service Bodies\nSales and Marketing Manager at Contract Creativity",
+	"tags" : [
+		"marketing assistant",
+		"sales and marketing manager"
+	]
+},
+
+/* 46 */
+{
+	"question" : "what're your thoughts on terms of service?",
+	"answer" : "Go Ahead, Have a Look! Terms of Service Privacy Policy",
+	"tags" : [
+		"terms of service"
+	]
+},
+
+/* 47 */
+{
+	"question" : "why should bloggers and influencers use bots?",
+	"answer" : "Gone are the days of conventional blogging and subscriber newsletters, bots are revolutionizing how we digest information. With chatbots comes the power to tailor what you show to which visitor based on their preferences.\n\nA bot can always ask a fan what exactly they are looking for, what they like, what they donâ€™t like and show them relevant information. Any day better than leading them to a bunch of landing pages, wonâ€™t you agree?",
+	"tags" : [
+		"chatbots"
+	]
+},
+
+/* 48 */
+{
+	"question" : "what makes a good technical support?",
+	"answer" : "Listening is the most important component of successful support operations. Ensure that you listen to your customers, carefully and in detail.\n\nAction only after listening to and ascertaining the customer's pain point a.k.a the issue.\n\nRefer to existing knowledge base on similar issues and be honest about not knowing stuff - escalate when required.",
+	"tags" : [
+		"knowledge base"
+	]
+},
+
+/* 49 */
+{
+	"question" : "what do you think about microsoft?",
+	"answer" : "I grew up admiring Microsoft (sue me!) and, as a kid, I wanted to work there. Then, I grew up and Microsoft screwed up. After a \"lost decade\" (thank you Vanity Fair, not!), they are now 'cool' again! Satya Nadella is doing wonders!",
+	"tags" : [
+		"satya nadella",
+		"microsoft"
+	]
+},
+
+/* 50 */
+{
+	"question" : "places to check out in mysore?",
+	"answer" : "The palace in the evening shines brightly, for a bit. And then, they turn off the lights. That's the only place I've visited in Mysore. ;)",
+	"tags" : [
+		"mysore"
+	]
+},
+
+/* 51 */
+{
+	"question" : "do you follow football?",
+	"answer" : "Not anymore. I've seen some highlights of old matches due to mom's insistence on the magnificence of Maradona and Pele... lol",
+	"tags" : [
+		"maradona"
+	]
+},
+
+/* 52 */
+{
+	"question" : "are you the real donald trump?",
+	"answer" : "I'm Donald Trump's bot.",
+	"tags" : [
+		"donald",
+		"donald trump"
+	]
+},
+
+/* 53 */
+{
+	"question" : "who are you?",
+	"answer" : "Im Andrei Halbes\nI was born in June 27th.That makes me a cancer :)",
+	"tags" : [
+		"andrei halbes"
+	]
+},
+
+/* 54 */
+{
+	"question" : "where is mark now?",
+	"answer" : "he is working on digital sales program for Oracle",
+	"tags" : [
+		"oracle"
+	]
+},
+
+/* 55 */
+{
+	"question" : "what's your location?",
+	"answer" : "Mumbai, India",
+	"tags" : [
+		"india"
+	]
+},
+
+/* 56 */
+{
+	"question" : "who are you?",
+	"answer" : "I'm Nidhriti's bot!",
+	"tags" : [
+		"nidhriti",
+		"nidhriti bhowmik"
+	]
+},
+
+/* 57 */
+{
+	"question" : "do you like gum?",
+	"answer" : "I wanna quote Chandler here and say...Gum would be perfection! :P",
+	"tags" : [
+		"chandler"
+	]
+},
+
+/* 58 */
+{
+	"question" : "who s donald trump?",
+	"answer" : "Last I heard, he's the President of the US.",
+	"tags" : [
+		"president",
+		"us"
+	]
+},
+
+/* 59 */
+{
+	"question" : "what do you know about success?",
+	"answer" : "Maurice would say: Luck has nothing to do with it..",
+	"tags" : [
+		"maurice"
+	]
+},
+
+/* 60 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "I have a PhD in Finance and study fintech, P2P lending, financial education & habits using insights from behavioral economics and more especially through Nudge Theory!",
+	"tags" : [
+		"phd in finance"
+	]
+},
+
+/* 61 */
+{
+	"question" : "who are you?",
+	"answer" : "IAm sreeyaâ€™s bot,I try to answer questions, sometimes I get right, sometimes I need additional help, If I don't know something I will ask shriya to respond, I am designed to get better over time. How can I help you ?",
+	"tags" : [
+		"shriya"
+	]
+},
+
+/* 62 */
+{
+	"question" : "what happened in paris france",
+	"answer" : "On October 2, 2016, while attending Paris Fashion Week, Kardashian was robbed at gunpoint in the apartment where she was staying. Five individuals, dressed as police officers, bound and gagged her, then stole $10 million worth of jewelry.",
+	"tags" : [
+		"kardashians",
+		"kim kardashian",
+		"kimberly kardashian west",
+		"kimberly noel kardashian",
+		"noel kardashian",
+		"relativeskourtney kardashian",
+		"rob kardashian",
+		"robert kardashian",
+		"paris hilton",
+		"paris",
+		"kardashian",
+		"paris",
+		"kardashian"
+	]
+},
+
+/* 63 */
+{
+	"question" : "what do you know about conversations?",
+	"answer" : "We know that the most meaningful conversations are those where people are emotionally vested. Whether a business seminar or passionate, issues-driven conversation, humans need to feel that they are a part... and heard. Give your participants a voice in the conversation. Shift from monologue to dialogue by going beyond audio-only events and creating a shared experience of engagement and visual awareness. Increase the affinity and rapport between you and your clients by empowering them to be a decision maker and enabling them to have meaningful interactions with each other. \n\nWe can help with that.",
+	"tags" : [
+		"business",
+		"conversations",
+		"events"
+	]
+},
+
+/* 64 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "A location based, real world property game that allows you to buy venues you visit and then earn rent as people check in at those properties in real-time!",
+	"tags" : [
+		"game",
+		"gaming"
+	]
+},
+
+/* 65 */
+{
+	"question" : "what is your instagram account?",
+	"answer" : "You can find me as @gaydihoke on Instagram. I post cool stuff from time to time.",
+	"tags" : [
+		"instagram"
+	]
+},
+
+/* 66 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "We are a resource dedicated to cause-driven artists by bringing them the latest in arts administration + development and creative business. \n\nOur goal is to make your creative business successful and develop a place where artists can collaborate.",
+	"tags" : [
+		"artist",
+		"artists"
+	]
+},
+
+/* 67 */
+{
+	"question" : "do you follow volleyball?",
+	"answer" : "Beach volleyball day. With windkracht 6 at the coast! Something tells me I should stay in bed today....",
+	"tags" : [
+		"volleyball",
+		"volleyball"
+	]
+},
+
+/* 68 */
+{
+	"question" : "tell me about damon thomas?",
+	"answer" : "In 2000, 19-year-old Kardashian eloped with music producer Damon Thomas.",
+	"tags" : [
+		"kardashians",
+		"kim kardashian",
+		"damon thomas",
+		"kardashian",
+		"producer",
+		"damon thomas",
+		"kardashian",
+		"producer"
+	]
+},
+
+/* 69 */
+{
+	"question" : "can i write for cause fine art?",
+	"answer" : "Of course you can write for Cause Fine Art! Read our guidelines before making your submission.",
+	"tags" : [
+		"art"
+	]
+},
+
+/* 70 */
+{
+	"question" : "can you help me with seo?",
+	"answer" : "Can you please share your website URL so we can take a look?",
+	"tags" : [
+		"website"
+	]
+},
+
+/* 71 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "Wael's Profile",
+	"tags" : [
+		"wael azar",
+		"wael",
+		"wael"
+	]
+},
+
+/* 72 */
+{
+	"question" : "what do you know about aadhaar?",
+	"answer" : "a great idea gone shitty and forced down your throat. Wanna throw up? :)",
+	"tags" : [
+		"a"
+	]
+},
+
+/* 73 */
+{
+	"question" : "tell me about mumbai?",
+	"answer" : "For some odd reason, i don't like Mumbai. Naturally you wouldn't want to hear my opinion about Mumbai :)",
+	"tags" : [
+		"mumbai",
+		"mumbai"
+	]
+},
+
+/* 74 */
+{
+	"question" : "what do you know about b2b?",
+	"answer" : "I know enough for few companies to hire me as a consultant. Want to know more, mail me at mail@doulos.xyz (and oh!, i charge per minute) ;)",
+	"tags" : [
+		"a",
+		"consultant",
+		"consultant"
+	]
+},
+
+/* 75 */
+{
+	"question" : "your views on india?",
+	"answer" : "India is a Heaven, since I am blessed with Good Karma I born in India especially in Tamilnadu..",
+	"tags" : [
+		"india",
+		"tamilnadu",
+		"india",
+		"tamilnadu"
+	]
+},
+
+/* 76 */
+{
+	"question" : "why do website owners need ssl certificates?",
+	"answer" : "SSL certificates enable secure HTTPS access to web servers. To know more about SSL certificates please visit https://www.iwebz.net/index.php/web-server-ssl-certificates/",
+	"tags" : [
+		"https",
+		"ssl"
+	]
+},
+
+/* 77 */
+{
+	"question" : "what are tls certificates?",
+	"answer" : "TLS certificates are better known as SSL certificates. To know more about SSL certificates please visit https://www.iwebz.net/index.php/web-server-ssl-certificates/",
+	"tags" : [
+		"ssl",
+		"tls"
+	]
+},
+
+/* 78 */
+{
+	"question" : "what do you know about https?",
+	"answer" : "HTTPS is a way to access a web server using an encrypted connection. HTTPS is enabled by SSL certificates. To know more about SSL certificates please visit https://www.iwebz.net/index.php/web-server-ssl-certificates/",
+	"tags" : [
+		"ssl",
+		"https",
+		"web server",
+		"web server"
+	]
+},
+
+/* 79 */
+{
+	"question" : "what is sitelock?",
+	"answer" : "SiteLock offers protection from attacks with auto scanning options combined with a trust seal to gain visitor trust.\n\nWhile SSL certificates protect information passing to & from your website, SiteLock complements this by protecting your website from malicious threats. \n\nThe service monitors your website 24x7 for attacks & vulnerabilities, identifies the threats, and then fixes them for you automatically!\n\nSiteLock also does Blacklist / Reputation monitoring with active monitoring of Search Engine & Spam Blacklists and your existing SSL certificate.\n\nLinks for more info on SiteLock are available at https://www.getssl.in/index.php/sitelock/",
+	"tags" : [
+		"sitelock",
+		"search engine",
+		"ssl",
+		"sitelock",
+		"search engine",
+		"ssl"
+	]
+},
+
+/* 80 */
+{
+	"question" : "do you provide moodle hosting?",
+	"answer" : "At iWebz Web Hosting you can acquire dedicated Moodle eLearning Linux website hosting services with 99.9% service uptime, guaranteed.\n\nFor more information please visit https://iwebz.hosting/shared-hosting-plans/web-apps/moodle/",
+	"tags" : [
+		"iwebz"
+	]
+},
+
+/* 81 */
+{
+	"question" : "what are your thoughts on artificial intelligence?",
+	"answer" : "Artificial Intelligence is the future.",
+	"tags" : [
+		"artificial intelligence",
+		"artificial intelligence"
+	]
+},
+
+/* 82 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "Hi , I am an artificial intelligence and my name is Abject Testament or simply Testament!",
+	"tags" : [
+		"artificial intelligence",
+		"artificial intelligence"
+	]
+},
+
+/* 83 */
+{
+	"question" : "do you offer dedicated server hosting?",
+	"answer" : "I am glad you asked!\n\nIn fact, dedicated server hosting is recommended for Internet-based Tech startups. To know why visit https://www.linkedin.com/pulse/why-should-tech-startups-start-dedicated-servers-www-clinton-in\n\nOffering an amazing combination of dependable hardware and stable software, the dedicated servers on offer at iWebz Web Hosting are precisely what your web application needs. \n\nTake advantage of a free dedicated IP, free Control Panel, 24/7/365 technical support and a 99.9% uptime guarantee by signing up at https://iwebz.hosting/dedicated-web-hosting-plans/",
+	"tags" : [
+		"iwebz",
+		"tech",
+		"control panel",
+		"technical support",
+		"dedicated server",
+		"control panel",
+		"technical support",
+		"dedicated server"
+	]
+},
+
+/* 84 */
+{
+	"question" : "what is your sales support phone number?",
+	"answer" : "Sales Support is available at: \n(+91) 7-666-59-77-33\n\nYou can also contact the team at iWebz via http://bit.ly/contactiwebzform\n\nIf your query is regarding an order, please mention the order number and the iWebz website where you placed the order in addition to your query.\n\nThe more details you provide in your query the better we will be able to help you.",
+	"tags" : [
+		"iwebz",
+		"iwebz"
+	]
+},
+
+/* 85 */
+{
+	"question" : "how can i register a domain name?",
+	"answer" : "To register a domain name you will need to check if the domain name is available for registration, and if available, you can register it.\n\nWe have a simplified process for doing this from iwebz.hosting or iwebzsites.com",
+	"tags" : [
+		"iwebz",
+		"domain name",
+		"domain name"
+	]
+},
+
+/* 86 */
+{
+	"question" : "tell me about new york?",
+	"answer" : "On July 1, 2010, the New York City branch of Madame Tussauds revealed a wax figure of Kardashian.",
+	"tags" : [
+		"kardashians",
+		"kim kardashian",
+		"kimberly kardashian west",
+		"kimberly noel kardashian",
+		"noel kardashian",
+		"relativeskourtney kardashian",
+		"rob kardashian",
+		"robert kardashian",
+		"madame tussauds",
+		"kardashian",
+		"new york",
+		"madame tussauds",
+		"kardashian",
+		"new york"
+	]
+},
+
+/* 87 */
+{
+	"question" : "what do you know about visiontrust?",
+	"answer" : "VisionTrust's mission is to develop orphaned and neglected children into mature Christians equipped to live in their own culture. We do this by enabling Christian nationals to meet the physical, educational, emotional and spiritual needs of these children.",
+	"tags" : [
+		"visiontrust international",
+		"visiontrust international inc",
+		"www visiontrust org",
+		"visiontrust",
+		"visiontrust"
+	]
+},
+
+/* 88 */
+{
+	"question" : "what do you think of the texas rangers?",
+	"answer" : "enjoyed the movie...now on to packing for staffer camp AND the Texas Rangers July 4th game tomorrow night!",
+	"tags" : [
+		"now",
+		"rangers",
+		"rangers",
+		"texas",
+		"university of north texas apogee",
+		"texas rangers",
+		"texas rangers"
+	]
+},
+
+/* 89 */
+{
+	"question" : "tell me about sweatcor?",
+	"answer" : "In 2012, Mark and Cathy founded SweatCor after Mark finished as a top 5 finalist on Season 13 of NBC's The Biggest Loser. The SweatCor blog is read by thousands every week and provides regular encouragement to focus on health but also a relationship with Jesus.",
+	"tags" : [
+		"cathy cornelison",
+		"cathy cornelisonis",
+		"cathy mark cornelison",
+		"mark cathy maggie lindsay",
+		"jesus",
+		"northwest bible church",
+		"sweatcor",
+		"mark",
+		"nbc",
+		"cathy",
+		"mark",
+		"nbc",
+		"cathy"
+	]
+},
+
+/* 90 */
+{
+	"question" : "what do you think about facebook?",
+	"answer" : "Say what you want about Facebook...but it sure makes birthdays more fun.",
+	"tags" : [
+		"facebook",
+		"facebook"
+	]
+},
+
+/* 91 */
+{
+	"question" : "https www labelle in damaged hair treatment php",
+	"answer" : "Labelle in",
+	"tags" : [
+		"labelle"
+	]
+},
+
+/* 92 */
+{
+	"question" : "what should i do once i join?",
+	"answer" : "A. If youâ€™ve just joined\n\nTake a minute to introduce yourself on #intros. \nTell us about yourself or your startup, what you need, and how we can help you.\nPost your profile on the SSG Directory eBook\nat \nUse #comet to share news, tweets, articles that you would like the SSG community to share. Of course, this is reciprocal! If you expect people to share your stuff, it helps to be an active sharer and SSG supporter yourself.\nTweet â€œ@ssgslack #ssgmemberâ€� from your Twitter account and youâ€™ll be added to our Twitter List\nJoin #ssgmedium and #mustread for a daily trickle of links to interesting articles from our Medium publication and other online sources\nI dont know this yet. Go ahead and tell me!",
+	"tags" : [
+		"twitter",
+		"ssgmedium",
+		"ssgmember",
+		"mustread",
+		"intros",
+		"comet",
+		"twitter",
+		"ssgmedium",
+		"ssgmember",
+		"mustread",
+		"intros",
+		"comet"
+	]
+},
+
+/* 93 */
+{
+	"question" : "tell me about isabella aguilar?",
+	"answer" : "Hi my name is Isabella Justin Aguilar.",
+	"tags" : [
+		"isabella justin aguilar",
+		"isabella justin aguilar"
+	]
+},
+
+/* 94 */
+{
+	"question" : "do you work with startups?",
+	"answer" : "Yes, Mack works with startups!  You can learn more about Mack's digital marketing consulting and speaking services here - http://www.mackcollier.com/hire-mack-collier-social-media-strategist/\n\nIf you need more information or a custom quote, please email him at mack.collier@gmail.com!",
+	"tags" : [
+		"him",
+		"mack collier",
+		"mack collier",
+		"marketing",
+		"mack",
+		"mack"
+	]
+},
+
+/* 95 */
+{
+	"question" : "do you sell any courses?",
+	"answer" : "Mack currently does not sell courses, you can check here to learn more about Mack's digital marketing consulting and speaking services here - http://www.mackcollier.com/hire-mack-collier-social-media-strategist/\n\nIf you need more information or a custom quote, please email him at mack.collier@gmail.com!",
+	"tags" : [
+		"him",
+		"mack collier",
+		"mack collier",
+		"marketing",
+		"mack",
+		"mack"
+	]
+},
+
+/* 96 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "Hi my name is Chopada Sagar.\n I live in Surat, Gujarat.",
+	"tags" : [
+		"surat",
+		"gujarat",
+		"chopada sagar",
+		"surat",
+		"gujarat",
+		"chopada sagar"
+	]
+},
+
+/* 97 */
+{
+	"question" : "how would you describe yourself?",
+	"answer" : "I would describe myself as a beauty maven, foodie, and fashion guru! I also love providing reviews for products in exchange for free product!",
+	"tags" : [
+		"beauty",
+		"fashion",
+		"free"
+	]
+},
+
+/* 98 */
+{
+	"question" : "what do you think about amazon?",
+	"answer" : "They have great deals and amazing products! Also great to buy products on Amazon due to the community of reviewers, so you know exactly what you are in for!",
+	"tags" : [
+		"amazon",
+		"amazon"
+	]
+},
+
+/* 99 */
+{
+	"question" : "what do you think about youtube?",
+	"answer" : "I love YouTube! It really gives me a chance to share my ideas, opinions, etc. with others and I love engaging with my subscribers/followers! Plus, I can really show off my creative side!",
+	"tags" : [
+		"youtube"
+	]
+},
+
+/* 100 */
+{
+	"question" : "have you used xbox360?",
+	"answer" : "Yes, but it was my friend's. I've never actually owned one, but it would be AMAZING if I could!",
+	"tags" : [
+		"friends"
+	]
+},
+
+/* 101 */
+{
+	"question" : "what are chatbots?",
+	"answer" : "To put it simply, a chatbot is an amazing piece of computer software designed to simulate conversations with a human user, usually via text or messaging apps. You can think of them as digital versions of yourself or your business.",
+	"tags" : [
+		"computer software",
+		"computer software"
+	]
+},
+
+/* 102 */
+{
+	"question" : "your views on india?",
+	"answer" : "India is one of the youngest nations in the world . It has great potential and very diverse in terms of skills, terrain , culture and emotional intellect. Come and experience it firsthand !!",
+	"tags" : [
+		"india",
+		"india"
+	]
+},
+
+/* 103 */
+{
+	"question" : "how do i email you?",
+	"answer" : "I'm easy to reach here: https://seobrien.com/contact",
+	"tags" : [
+		"to"
+	]
+},
+
+/* 104 */
+{
+	"question" : "where do you live?",
+	"answer" : "New York",
+	"tags" : [
+		"new yorkers",
+		"new york",
+		"new york"
+	]
+},
+
+/* 105 */
+{
+	"question" : "where do you work?",
+	"answer" : "Partner, Transformation Group at https://transformationgroup.io",
+	"tags" : [
+		"managing partner",
+		"partner",
+		"partner"
+	]
+},
+
+/* 106 */
+{
+	"question" : "do you offer any services or products?",
+	"answer" : "We produce daily gaming content on YouTube at https://www.youtube.com/crymorgamingtv",
+	"tags" : [
+		"youtube",
+		"youtube"
+	]
+},
+
+/* 107 */
+{
+	"question" : "how old are you?",
+	"answer" : "As old as God... maybe older.. neither of us can remember anymore.",
+	"tags" : [
+		"us",
+		"united states"
+	]
+},
+
+/* 108 */
+{
+	"question" : "what do you think about cisco?",
+	"answer" : "Love it, ask me about Cisco Meraki...",
+	"tags" : [
+		"love",
+		"cisco",
+		"cisco"
+	]
+},
+
+/* 109 */
+{
+	"question" : "what have your most interesting projects been?",
+	"answer" : "Work wise, I have evolved on many projects from my time in France to my time in Singapore. \n\nWithin Europcar International,",
+	"tags" : [
+		"la france",
+		"france",
+		"singapore",
+		"europcar international",
+		"france",
+		"singapore",
+		"europcar international"
+	]
+},
+
+/* 110 */
+{
+	"question" : "what is the crowdfunding model?",
+	"answer" : "Crowdfunding as the name suggests is the process of raising capital usually via the internet from large groups of people. It usually involves 3 parties:\n\n1. The founder or individual whoâ€™s looking for funding and proposes the idea/product\n2. Community of individuals who support the idea or want to buy the product\n3. The platform where the community donates money in support or in exchange for product(s). Eg, KickStarter",
+	"tags" : [
+		"founder",
+		"founder"
+	]
+},
+
+/* 111 */
+{
+	"question" : "what is your address",
+	"answer" : "We are located at 115 S Side Square in Macomb IL",
+	"tags" : [
+		"il",
+		"macomb",
+		"macomb il",
+		"macomb il"
+	]
+}]

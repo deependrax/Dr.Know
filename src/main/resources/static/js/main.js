@@ -9,6 +9,7 @@ $(document).ready(function() {
 function ajaxSubmit() {
 	var search = {}
 	search["question"] = $("#question").val();
+	$('#results').html('');
 
 	$.ajax({
 		type : "POST",
@@ -19,10 +20,10 @@ function ajaxSubmit() {
 		cache : false,
 		timeout : 600000,
 		success : function(data) {
-			console.log(data)
+			console.log(data);
 			var json = data.answers.map(ans => {
-					var ansStr = "<pre>" + ans.answer; 
-					if(ans.keywords != null) {
+					var ansStr = "<pre>" + ans.answer.replace(/^"|"$/g, '').replace(/\\n/g, '<br/>'); 
+					if(ans.keywords != null && ans.keywords.length > 0) {
 							ansStr += "<hr>" + ans.keywords.map(key => {
 								return "<span class='keyword " + (key.match ? "match" : "") + "'>" 
 									+ key.keyword
