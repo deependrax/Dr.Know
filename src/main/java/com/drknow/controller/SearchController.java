@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.drknow.model.SearchResponse;
+import com.drknow.service.SearchService;
 import com.drknow.model.SearchQuery;
 import com.drknow.model.Answer;
-import com.drknow.services.SearchService;
 
 import javax.validation.Valid;
 import java.util.List;

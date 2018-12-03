@@ -22,13 +22,13 @@ function ajaxSubmit() {
 		success : function(data) {
 			console.log(data);
 			var json = data.answers.map(ans => {
-					var ansStr = "<pre>" + ans.answer.replace(/^"|"$/g, '').replace(/\\n/g, '<br/>'); 
+					var ansStr = "<pre>" + ans.answer.replace(/\\n/g, '<br/>'); 
 					if(ans.keywords != null && ans.keywords.length > 0) {
 							ansStr += "<hr>" + ans.keywords.map(key => {
 								return "<span class='keyword " + (key.match ? "match" : "") + "'>" 
 									+ key.keyword
 									+ '</span>'
-						  }).join('\t')
+						  }).join(' | ')
 						}
 					ansStr += "</pre>";
 					return ansStr;

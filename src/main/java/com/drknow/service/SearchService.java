@@ -1,11 +1,11 @@
-package com.drknow.services;
+package com.drknow.service;
 
-import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.drknow.model.QNA;
+import com.drknow.util.TextUtils;
 import com.drknow.model.Answer;
 import com.drknow.model.Keyword;
 import com.google.gson.Gson;
@@ -14,12 +14,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -39,14 +37,13 @@ public class SearchService {
 
 	private static Answer NO_ANSWER = new Answer("I don't know this.", null);
 	private static Map<String, List<QNA>> answersIndex;
-	private static Set<String> stopWords;
 
 	public List<Answer> getAnswers(String question) {
 		Map<QNA, Answer> answers = new HashMap<>();
-		List<String> keywords = getKeywords(question);
+		List<String> keywords = TextUtils.getKeywords(question);
 		List<String> matchedKeywords = new ArrayList<>();
 
-		List<QNA> qnas = answersIndex.get(sanitize(question));
+		List<QNA> qnas = answersIndex.get(TextUtils.sanitize(question));
 		if (qnas != null) {
 			qnas.forEach(qna -> {
 				answers.put(qna, new Answer(qna.getAnswer()));
@@ -94,43 +91,42 @@ public class SearchService {
 				keywords.stream().map(keyword -> new Keyword(keyword, false)).collect(Collectors.toSet()), 1);
 	}
 
-	// Cleanup & Index the data
+	/**
+	 * Cleanup & Index the data
+	 * 
+	 * @throws IOException
+	 */
 	@PostConstruct
 	private void indexData() throws IOException {
-		answersIndex = new HashMap<>();
-
-		logger.info("Loading stop words");
-		stopWords = new HashSet<String>(Arrays.asList(
-				FileUtils.readFileToString(new File("./src/main/resources/english-stop-words.dat")).split(",")));
-
 		logger.info("Loading data file");
 		JsonParser parser = new JsonParser();
 		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json"));
 
+		answersIndex = new HashMap<>();
 		Iterator<JsonElement> iterator = data.iterator();
 		while (iterator.hasNext()) {
 			JsonObject jsonObject = (JsonObject) iterator.next();
 
-			String question = (String) jsonObject.get("question").toString();
-			String answer = (String) jsonObject.get("answer").toString();
+			String question = (String) jsonObject.get("question").getAsString();
+			String answer = (String) jsonObject.get("answer").getAsString();
 			JsonArray keywordsArr = (JsonArray) jsonObject.get("tags");
 
 			Set<String> keywords = new HashSet<String>();
-			keywords.addAll(getKeywords(question));
-			keywords.addAll(getKeywords(answer));
+			keywords.addAll(TextUtils.getKeywords(question));
+			keywords.addAll(TextUtils.getKeywords(answer));
 
 			Iterator<JsonElement> keywordIterator = keywordsArr.iterator();
 			while (keywordIterator.hasNext()) {
-				String keyword = keywordIterator.next().toString().toLowerCase();
+				String keyword = keywordIterator.next().getAsString().toLowerCase();
 
-				if (isValidKeyword(keyword))
+				if (TextUtils.isValidKeyword(keyword))
 					keywords.add(keyword);
 			}
 
 			QNA qna = new QNA(question, answer, keywords);
 
 			// Index answer for the question exact match.
-			indexAnswer(sanitize(question), qna);
+			indexAnswer(TextUtils.sanitize(question), qna);
 
 			logger.info(GSON.toJson(keywords));
 
@@ -150,28 +146,5 @@ public class SearchService {
 		} else {
 			answersIndex.put(indexKey, new ArrayList<QNA>(Arrays.asList(qna)));
 		}
-	}
-
-	private String sanitize(String text) {
-		return text.toLowerCase().replaceAll("\\\\t|\\\\n", " ").replaceAll("[^a-zA-Z ]", " ").trim();
-	}
-
-	private List<String> getKeywords(String text) {
-		if (text == null || text.length() == 0)
-			return new ArrayList<String>();
-
-		return filterStopwords(Arrays.asList(text.split(" ")));
-	}
-
-	private List<String> filterStopwords(Collection<String> keywords) {
-		return keywords.stream().map(keyword -> sanitize(keyword)).filter(keyword -> {
-			return isValidKeyword(keyword);
-		}).collect(Collectors.toList());
-	}
-
-	private boolean isValidKeyword(String keyword) {
-		if (keyword == null || keyword.equals(""))
-			return false;
-		return !stopWords.contains(keyword.toLowerCase());
 	}
 }
