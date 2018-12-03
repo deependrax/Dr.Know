@@ -30,7 +30,7 @@ public class TextUtils {
 	}
 
 	public static String sanitize(String text) {
-		return text.toLowerCase().replaceAll("\\\\t|\\\\n", " ").replaceAll("[^a-zA-Z0-9.- ]", " ").trim();
+		return text.toLowerCase().replaceAll("\\\\t|\\\\n", " ").replaceAll("[^a-zA-Z0-9.-]", " ").trim();
 	}
 
 	public static List<String> getKeywords(String text) {
