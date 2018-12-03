@@ -48,16 +48,25 @@
 	font-weight: 600;
 }
 
-hr {
-	margin-bottom: 0px;
-}
-
 .form-horizontal .form-group {
 	margin-right: 0px;
 	margin-left: 0px;
 }
 
 .results {
-    overflow: auto;
-    max-height: 350px;
+	overflow: auto;
+	max-height: 350px;
+}
+
+hr {
+	margin-bottom: 0px;
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
 }

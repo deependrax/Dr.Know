@@ -3,6 +3,7 @@
 
 A Spring Boot, thymeleaf Java demo application for searching questions and answers.
 
+
 <img src="./src/main/resources/static/images/snapshot.png"><br>
 
 

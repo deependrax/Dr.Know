@@ -41,8 +41,8 @@ public class SearchService {
 	public List<Answer> getAnswers(String question) {
 		Map<QNA, Answer> answers = new HashMap<>();
 		List<String> keywords = TextUtils.getKeywords(question);
-		List<String> matchedKeywords = new ArrayList<>();
 
+		// Question exact match search
 		List<QNA> qnas = answersIndex.get(TextUtils.sanitize(question));
 		if (qnas != null) {
 			qnas.forEach(qna -> {
@@ -50,13 +50,12 @@ public class SearchService {
 			});
 		}
 
-		if (answers.size() == 0) { // Keyword search
+		// Keyword search if no exact match found
+		if (answers.size() == 0) {
 			keywords.forEach(keyword -> {
 				List<QNA> matchedQNAs = answersIndex.get(keyword);
 
 				if (matchedQNAs != null) {
-					matchedKeywords.add(keyword);
-
 					matchedQNAs.forEach(matchedQNA -> {
 						Answer ans = answers.get(matchedQNA);
 
@@ -76,7 +75,8 @@ public class SearchService {
 			});
 		}
 
-		if (answers.size() == 0) // No answers found
+		 // No answers found
+		if (answers.size() == 0)
 			return new ArrayList<>(Arrays.asList(NO_ANSWER));
 
 		// Sort answers found by score
@@ -103,6 +103,7 @@ public class SearchService {
 		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json"));
 
 		answersIndex = new HashMap<>();
+		
 		Iterator<JsonElement> iterator = data.iterator();
 		while (iterator.hasNext()) {
 			JsonObject jsonObject = (JsonObject) iterator.next();
@@ -128,7 +129,7 @@ public class SearchService {
 			// Index answer for the question exact match.
 			indexAnswer(TextUtils.sanitize(question), qna);
 
-			logger.info(GSON.toJson(keywords));
+			logger.debug(GSON.toJson(keywords));
 
 			// Add index for each unique keyword for the question
 			Iterator<String> i = keywords.iterator();
