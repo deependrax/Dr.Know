@@ -104,40 +104,38 @@ public class SearchService {
 
 		answersIndex = new HashMap<>();
 		
-		Iterator<JsonElement> iterator = data.iterator();
-		while (iterator.hasNext()) {
-			JsonObject jsonObject = (JsonObject) iterator.next();
+		data.forEach(jsonEle -> {
+			JsonObject qnaJson = (JsonObject) jsonEle;
 
-			String question = (String) jsonObject.get("question").getAsString();
-			String answer = (String) jsonObject.get("answer").getAsString();
-			JsonArray keywordsArr = (JsonArray) jsonObject.get("tags");
+			String question = (String) qnaJson.get("question").getAsString();
+			String answer = (String) qnaJson.get("answer").getAsString();
+			JsonArray keywordsArr = (JsonArray) qnaJson.get("tags");
 
 			Set<String> keywords = new HashSet<String>();
 			keywords.addAll(TextUtils.getKeywords(question));
 			keywords.addAll(TextUtils.getKeywords(answer));
 
-			Iterator<JsonElement> keywordIterator = keywordsArr.iterator();
-			while (keywordIterator.hasNext()) {
-				String keyword = keywordIterator.next().getAsString().toLowerCase();
+			keywordsArr.forEach(keywordJson -> {
+				String keyword = keywordJson.getAsString().toLowerCase();
 
 				if (TextUtils.isValidKeyword(keyword))
 					keywords.add(keyword);
-			}
+			});
 
 			QNA qna = new QNA(question, answer, keywords);
 
 			// Index answer for the question exact match.
 			indexAnswer(TextUtils.sanitize(question), qna);
 
-			logger.debug(GSON.toJson(keywords));
-
 			// Add index for each unique keyword for the question
-			Iterator<String> i = keywords.iterator();
-			while (i.hasNext()) {
-				String keyword = i.next();
+			keywords.forEach(keyword -> {
 				indexAnswer(keyword, qna);
-			}
-		}
+			});
+			
+			logger.debug(GSON.toJson(keywords));
+		});
+		
+		logger.info("{} questions indexed on total {} hash indexes", data.size(), answersIndex.size());
 	}
 
 	private void indexAnswer(String indexKey, QNA qna) {
