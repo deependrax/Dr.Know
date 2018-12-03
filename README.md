@@ -1,8 +1,7 @@
 # Dr. Know
-> Starving minds, welcome to Dr. Know!
+> Starving minds, welcome to Dr. Know! 
 
-<img src="./src/main/resources/static/images/drknow.jpg"><br>
-
+> a Spring Boot, thymeleaf Java demo application for searching questions and answers.
 
 ## Setup and Run
 - Git checkout the project and run following command
@@ -11,6 +10,9 @@
 ```shell
 $ mvn spring-boot:run
 ```
+
+<img src="./src/main/resources/static/images/snapshot.png"><br>
+
 
 ## License
 
