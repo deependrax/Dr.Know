@@ -100,15 +100,16 @@ public class SearchService {
 	 */
 	@PostConstruct
 	private void indexData() throws IOException {
-		answersIndex = new HashMap<>();
-
 		logger.info("Loading data file");
 		JsonParser parser = new JsonParser();
 		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json")); // Move to property file.
-		Type listType = new TypeToken<List<QNA>>() {
-		}.getType();
+		Type listType = new TypeToken<List<QNA>>() {}.getType();
 		List<QNA> qnaList = GSON.fromJson(data, listType);
-
+		
+		// Initialize answers index as per required size.
+		int initialCapacity = (int) (1200/0.75 + 1); // TODO: Logic to calculate an approx no of unique keywords possible based on data file size.
+		answersIndex = new HashMap<>(initialCapacity);
+		
 		qnaList.forEach(qna -> {
 			Set<String> keywords = new HashSet<String>();
 			keywords.addAll(TextUtils.getKeywords(qna.getQuestion()));
@@ -122,10 +123,10 @@ public class SearchService {
 			});
 
 			qna.setTags(keywords);
-
+			
 			// Index answer for the question exact match.
 			indexAnswer(TextUtils.sanitize(qna.getQuestion()), qna);
-
+			
 			// Add index for each unique keyword for the question
 			keywords.forEach(keyword -> {
 				indexAnswer(keyword, qna);
