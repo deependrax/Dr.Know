@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public class TextUtils {
 	private static final Logger logger = LoggerFactory.getLogger(TextUtils.class);
 	private static Set<String> stopWords;
-	
+
 	static {
 		logger.info("Loading stop words");
 		try {
@@ -30,14 +30,28 @@ public class TextUtils {
 	}
 
 	public static String sanitize(String text) {
-		return text.toLowerCase().replaceAll("\\\\t|\\\\n", " ").replaceAll("[^a-zA-Z0-9.-]", " ").trim();
+		return text.toLowerCase()
+				.replaceAll("\\\\t|\\\\n|'s|[^a-zA-Z0-9. '-]|\\.+\\s*$|^\\d+$|^[a-zA-Z]{1}$|\\.{2,}|^'|'$", " ").trim();
 	}
 
 	public static List<String> getKeywords(String text) {
 		if (text == null || text.length() == 0)
 			return new ArrayList<String>();
 
-		return filterStopwords(Arrays.asList(text.split(" ")));
+		List<String> allKeywords = new ArrayList<>();
+		String[] keywords = sanitize(text).split(" ");
+
+		// Again split by certain symbols to get more discrete tags
+		for (String keyword : keywords) {
+			if (keyword != null && keyword.length() > 0) {
+				allKeywords.add(keyword);
+				if (keyword.matches(".*\\..*|.*-.*|.*'.*"))
+					allKeywords.addAll(Arrays.asList(keyword.split("\\.|-|'")));
+
+				// TODO: Add singular words if applicable
+			}
+		}
+		return filterStopwords(allKeywords);
 	}
 
 	public static List<String> filterStopwords(Collection<String> keywords) {
