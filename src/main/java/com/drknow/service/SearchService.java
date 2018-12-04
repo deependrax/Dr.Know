@@ -69,6 +69,9 @@ public class SearchService {
 						ans.getKeywords().add(matchedKeyword);
 
 						answers.put(matchedQNA, ans);
+						// TODO: terminate at a point when sufficient answers has been selected... 
+						// on logic that scoring of sub-keywords will anyways will be less
+						// we dont want to bombard users with answers since its very differnt than search.
 					});
 				}
 			});
@@ -101,7 +104,7 @@ public class SearchService {
 
 		logger.info("Loading data file");
 		JsonParser parser = new JsonParser();
-		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json"));
+		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json")); // Move to property file.
 		Type listType = new TypeToken<List<QNA>>() {
 		}.getType();
 		List<QNA> qnaList = GSON.fromJson(data, listType);

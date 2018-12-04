@@ -22,7 +22,7 @@ public class TextUtils {
 		logger.info("Loading stop words");
 		try {
 			stopWords = new HashSet<String>(Arrays.asList(
-					FileUtils.readFileToString(new File("./src/main/resources/english-stop-words.dat")).split(",")));
+					FileUtils.readFileToString(new File("./src/main/resources/english-stop-words.dat")).split(","))); // Move to property file.
 		} catch (IOException e) {
 			logger.error("Some error loading stop words", e);
 			stopWords = new HashSet<>();
@@ -48,7 +48,11 @@ public class TextUtils {
 				if (keyword.matches(".*\\..*|.*-.*|.*'.*"))
 					allKeywords.addAll(Arrays.asList(keyword.split("\\.|-|'")));
 
-				// TODO: Add singular words if applicable
+				// TODO: Add singular, plural, synonym words for each keyword
+				
+				// TODO: index with partial keywords as well so that we can get a match with partial keyword match as well.
+				// scoring of these keywords will keep decreasing as the level decreases.
+				// TODO: order of the keywords are now important
 			}
 		}
 		return filterStopwords(allKeywords);
