@@ -33,7 +33,15 @@ function ajaxSubmit() {
 					ansStr += "</pre>";
 					return ansStr;
 					}).join('')
-				
+					
+				var answersStr = " answers ";
+				if(data.answers.length == 1){
+					answersStr = " answer "
+				}
+
+				if(data.answers[0].answer != "I don't know this."){
+					json = "<small><i>" + data.answers.length + answersStr +"found.</i></small><br>" + json;
+				}
 			$('#results').html(json);
 		},
 		error : function(e) {

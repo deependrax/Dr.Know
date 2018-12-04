@@ -10,8 +10,6 @@ import com.drknow.model.Answer;
 import com.drknow.model.Keyword;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
@@ -23,7 +21,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -77,7 +74,7 @@ public class SearchService {
 			});
 		}
 
-		 // No answers found
+		// No answers found
 		if (answers.size() == 0)
 			return new ArrayList<>(Arrays.asList(NO_ANSWER));
 
@@ -101,13 +98,14 @@ public class SearchService {
 	@PostConstruct
 	private void indexData() throws IOException {
 		answersIndex = new HashMap<>();
-		
+
 		logger.info("Loading data file");
 		JsonParser parser = new JsonParser();
 		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json"));
-		Type listType = new TypeToken<List<QNA>>() {}.getType();
+		Type listType = new TypeToken<List<QNA>>() {
+		}.getType();
 		List<QNA> qnaList = GSON.fromJson(data, listType);
-		
+
 		qnaList.forEach(qna -> {
 			Set<String> keywords = new HashSet<String>();
 			keywords.addAll(TextUtils.getKeywords(qna.getQuestion()));
@@ -115,13 +113,13 @@ public class SearchService {
 
 			qna.getTags().forEach(keyword -> {
 				keywords.addAll(TextUtils.getKeywords(keyword));
-				
+
 				if (TextUtils.isValidKeyword(keyword))
 					keywords.add(keyword);
 			});
-			
+
 			qna.setTags(keywords);
-			
+
 			// Index answer for the question exact match.
 			indexAnswer(TextUtils.sanitize(qna.getQuestion()), qna);
 
@@ -129,10 +127,10 @@ public class SearchService {
 			keywords.forEach(keyword -> {
 				indexAnswer(keyword, qna);
 			});
-			
+
 			logger.debug(GSON.toJson(keywords));
 		});
-		
+
 		logger.info("{} questions indexed on total {} hash indexes", data.size(), answersIndex.size());
 	}
 
