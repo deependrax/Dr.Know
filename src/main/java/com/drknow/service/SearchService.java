@@ -13,9 +13,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -98,34 +100,30 @@ public class SearchService {
 	 */
 	@PostConstruct
 	private void indexData() throws IOException {
+		answersIndex = new HashMap<>();
+		
 		logger.info("Loading data file");
 		JsonParser parser = new JsonParser();
 		JsonArray data = (JsonArray) parser.parse(new FileReader("./src/main/resources/dataset.json"));
-
-		answersIndex = new HashMap<>();
+		Type listType = new TypeToken<List<QNA>>() {}.getType();
+		List<QNA> qnaList = GSON.fromJson(data, listType);
 		
-		data.forEach(jsonEle -> {
-			JsonObject qnaJson = (JsonObject) jsonEle;
-
-			String question = (String) qnaJson.get("question").getAsString();
-			String answer = (String) qnaJson.get("answer").getAsString();
-			JsonArray keywordsArr = (JsonArray) qnaJson.get("tags");
-
+		qnaList.forEach(qna -> {
 			Set<String> keywords = new HashSet<String>();
-			keywords.addAll(TextUtils.getKeywords(question));
-			keywords.addAll(TextUtils.getKeywords(answer));
+			keywords.addAll(TextUtils.getKeywords(qna.getQuestion()));
+			keywords.addAll(TextUtils.getKeywords(qna.getAnswer()));
 
-			keywordsArr.forEach(keywordJson -> {
-				String keyword = keywordJson.getAsString().toLowerCase();
-
+			qna.getTags().forEach(keyword -> {
+				keywords.addAll(TextUtils.getKeywords(keyword));
+				
 				if (TextUtils.isValidKeyword(keyword))
 					keywords.add(keyword);
 			});
-
-			QNA qna = new QNA(question, answer, keywords);
-
+			
+			qna.setTags(keywords);
+			
 			// Index answer for the question exact match.
-			indexAnswer(TextUtils.sanitize(question), qna);
+			indexAnswer(TextUtils.sanitize(qna.getQuestion()), qna);
 
 			// Add index for each unique keyword for the question
 			keywords.forEach(keyword -> {

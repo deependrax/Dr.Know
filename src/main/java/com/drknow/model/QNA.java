@@ -6,18 +6,18 @@ public class QNA {
 
 	private String question;
 	private String answer;
-	private Set<String> keywords;
+	private Set<String> tags;
 
-	public QNA(String question, String answer, Set<String> keywords) {
+	public QNA(String question, String answer, Set<String> tags) {
 		super();
 		this.question = question;
 		this.answer = answer;
-		this.keywords = keywords;
+		this.tags = tags;
 	}
 
 	@Override
 	public String toString() {
-		return "QNA [question=" + question + ", answer=" + answer + ", keywords=" + keywords + "]";
+		return "QNA [question=" + question + ", answer=" + answer + ", tags=" + tags + "]";
 	}
 
 	public String getQuestion() {
@@ -36,11 +36,11 @@ public class QNA {
 		this.answer = answer;
 	}
 
-	public Set<String> getKeywords() {
-		return keywords;
+	public Set<String> getTags() {
+		return tags;
 	}
 
-	public void setKeywords(Set<String> keywords) {
-		this.keywords = keywords;
+	public void setTags(Set<String> tags) {
+		this.tags = tags;
 	}
 }
